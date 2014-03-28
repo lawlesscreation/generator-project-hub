@@ -1,4 +1,4 @@
-# generator-project-hub
+# Project hub generator
 
 > [Yeoman](http://yeoman.io) generator for creating project hubs.
 
