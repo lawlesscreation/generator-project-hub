@@ -1,0 +1,299 @@
+/*------------------------------------------------------------------------------------
+  Mobile and up
+  Extends basic styling for good browsers (those that support media queries)
+------------------------------------------------------------------------------------*/
+@media only screen {
+  body {
+    color: #222;
+    font: 100%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+    margin: 10px 35px;
+  }
+
+  /* HELPERS
+  ------------------------------------------*/
+  .rm,
+  .remove {
+    display: none;
+    visibility: hidden;
+  }
+
+  .hide,
+  .hidden {
+    position: absolute;
+    left: -999em;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after {
+    clear: both;
+  }
+
+  .float--left {
+    float: left;
+  }
+
+  .float--right {
+    float: right;
+  }
+
+  .text--left {
+    text-align: left;
+  }
+
+  .text--right {
+    text-align: right;
+  }
+
+  .text--center {
+    text-align: center;
+  }
+
+  /* TYPOGRAPHY
+  --------------------------------------------------------------------------------*/
+  /* CODE
+  ------------------------------------------*/
+  code,
+  pre {
+    font-size: 87.5%;
+    border-radius: 3px;
+    color: navy;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    white-space: pre;
+  }
+
+  code {
+    padding: 2px 4px;
+  }
+
+  pre {
+    margin: 15px 0;
+    padding: 19px 9px 14px;
+    overflow: auto;
+  }
+  pre code {
+    border: none;
+  }
+
+  /* HEADINGS
+  ------------------------------------------*/
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    clear: both;
+    font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+    font-weight: 700;
+    margin-bottom: .5em;
+  }
+
+  h1 {
+    font-size: 200%;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  h3 {
+    font-size: 112.5%;
+  }
+
+  h4 {
+    font-size: 100%;
+  }
+
+  h5 {
+    font-size: 81.25%;
+  }
+
+  h6 {
+    font-size: 75%;
+  }
+
+  /* LINKS
+  ------------------------------------------*/
+  a {
+    cursor: default;
+    color: #222;
+    text-decoration: none;
+  }
+
+  a[href] {
+    border-bottom: 1px solid #40AC40;
+  }
+
+  a:link:hover, a:link:focus {
+    cursor: pointer;
+    border-bottom: none;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #222;
+    background-color: #e5e5e5;
+  }
+
+  /* LISTS
+  ------------------------------------------*/
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  dl dt {
+    font-weight: 700;
+  }
+
+  /* QUOTES
+  ------------------------------------------*/
+  blockquote {
+    padding: 0 20px;
+    margin: 1em 0;
+    border-left: 10px solid #666;
+  }
+
+  blockquote p {
+    margin-bottom: 0;
+  }
+
+  blockquote cite {
+    color: #999;
+    font-size: 87.5%;
+    font-style: italic;
+  }
+
+  blockquote cite:before {
+    content: "- ";
+  }
+
+  /* TABLES
+  ------------------------------------------*/
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px 0;
+    margin: 1em 0;
+  }
+
+  caption {
+    text-align: left;
+    font-style: italic;
+  }
+
+  th,
+  td {
+    border-width: 0 0 1px;
+    border-style: solid;
+    padding: 4px 10px;
+  }
+
+  th {
+    font-weight: 700;
+    text-align: left;
+  }
+
+  /* TEXT
+  ------------------------------------------*/
+  p {
+    line-height: 1.5;
+    margin: 0 0 1em;
+  }
+
+  /* COMPONENTS
+  --------------------------------------------------------------------------------*/
+  .timeline {
+    padding: 0;
+    margin-bottom: 1em;
+    position: relative;
+  }
+
+  .timeline:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #40AC40;
+    z-index: 1000;
+  }
+
+  .timeline_item {
+    border-left: 4px solid #ccc;
+  }
+
+  .timeline_item a {
+    border-bottom: none;
+    color: #ccc;
+    border-radius: 3px;
+    padding: 0 3px;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-bottom: 3em;
+    position: relative;
+  }
+
+  .timeline_item a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -32px;
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background: #ccc;
+  }
+
+  .timeline_item .item_date {
+    font-size: 75%;
+    margin: 0;
+  }
+
+  .timeline_item .item_title {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .timeline_item--delivered {
+    border-left: 4px solid #40AC40;
+  }
+
+  .timeline_item--delivered a {
+    color: #666;
+  }
+
+  .timeline_item--delivered a:before {
+    background: #40AC40;
+    left: -37px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .timeline_item--delivered a:hover,
+  .timeline_item--delivered a:focus {
+    text-decoration: none;
+    color: #222;
+    background-color: #e5e5e5;
+  }
+
+  .timeline_item--delivered .item-date {
+    font-size: 75%;
+    margin: 0;
+  }
+
+  .timeline_item--delivered .item-title {
+    margin: 0;
+    font-weight: 700;
+    color: #222;
+  }
+
+} /* end media */

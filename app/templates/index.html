@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]> <html lang="en" class="lte9 lte8 oldie"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="lte9 lte8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="lte9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" dir="ltr"> <!--<![endif]-->
+  <head>
+    <title><%= clientName %> project hub</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
+    <meta name="author" content="<%= copyrightAuthor %>" />
+
+    <link rel="stylesheet" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <link rel="stylesheet" media="print" href="css/print.css" />
+  </head>
+
+  <body>
+    <h1><%= clientName %> project hub</h1>
+
+    <ol class="timeline">
+      <li class="timeline_item">
+        <a>
+          <p class="item_date">ETA: DD MMM YYYY</p>
+          <p class="item_title">UAT website</p>
+        </a>
+      </li><!-- .timeline_item -->
+
+      <li class="timeline_item">
+        <a>
+          <p class="item_date">ETA: DD MMM YYYY</p>
+          <p class="item_title">HTML templates</p>
+        </a>
+      </li><!-- .timeline_item -->
+
+      <li class="timeline_item">
+        <a>
+          <p class="item_date">ETA: DD MMM YYYY</p>
+          <p class="item_title">Visual designs</p>
+        </a>
+      </li><!-- .timeline_item -->
+
+      <li class="timeline_item">
+        <a>
+          <p class="item_date">ETA: DD MMM YYYY</p>
+          <p class="item_title">Wireframe / Prototype</p>
+        </a>
+      </li><!-- .timeline_item -->
+
+      <li class="timeline_item">
+        <a>
+          <p class="item_date">ETA: DD MMM YYYY</p>
+          <p class="item_title">Functional requirements</p>
+        </a>
+      </li><!-- .timeline_item -->
+
+      <li class="timeline_item timeline_item--delivered">
+        <a href="deliverables/01-contract/">
+          <p class="item_date">01 Jan 2014</p>
+          <p class="item_title">Contract</p>
+        </a>
+      </li><!-- .timeline_item -->
+    </ol><!-- .timeline -->
+
+    <footer role="contentinfo">
+      <p>&copy; <%= (new Date).toISOString().split('-')[0] %> <%= copyrightAuthor %>. All rights reserved.</p>
+    </footer><!-- .footer -->
+  </body>
+</html>
