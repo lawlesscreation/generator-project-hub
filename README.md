@@ -1,4 +1,4 @@
-# generator-project-hub
+# Project hub generator
 
 > [Yeoman](http://yeoman.io) generator for creating project hubs.
 
@@ -20,12 +20,6 @@ Read more about [project hubs on 24 Ways.](http://24ways.org/2013/project-hubs/)
 
 ### What is Yeoman?
 
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
 Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
 
 ```
@@ -46,8 +40,8 @@ Finally, generate the project hub:
 
 ```
 $ mkdir client-project-hub && cd $_
-# => Create a folder for your new project hub and cd into it`
+# => Create a folder for your new project hub and cd into it
 
 $ yo project-hub
-# => Answer some questions and you're done!`
+# => Answer some questions and you're done!
 ```
