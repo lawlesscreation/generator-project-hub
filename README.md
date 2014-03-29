@@ -1,5 +1,10 @@
 # Project hub generator
 
+[![NPM version](https://badge.fury.io/js/generator-project-hub.png)](http://badge.fury.io/js/generator-project-hub)
+[![Dependency Status](https://david-dm.org/lawlesscreation/generator-project-hub.png)](https://david-dm.org/lawlesscreation/generator-project-hub.png)
+[![devDependency Status](https://david-dm.org/lawlesscreation/generator-project-hub/dev-status.png)](https://david-dm.org/lawlesscreation/generator-project-hub#info=devDependencies)
+
+
 > [Yeoman](http://yeoman.io) generator for creating project hubs.
 
 
