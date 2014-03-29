@@ -1,27 +1,12 @@
 /*!
  * Print CSS for printable, readable pages
  */
-/* HIDE UNWANTED PRINT CONTENT
-------------------------------------------*/
-nav {
-  display: none;
-}
 
-/* STYLE PRINT
+/* PRINT IMPROVEMENTS
 ------------------------------------------*/
 body {
   background: white;
   font: 12pt/1.3 Georgia, "Times New Roman", Times, serif;
-}
-
-.layout-wrap-one {
-  width: auto;
-  margin: 0 5%;
-  padding: 0;
-  border: 0;
-  float: none;
-  color: black;
-  background: transparent none;
 }
 
 img {
@@ -30,14 +15,21 @@ img {
 
 a:link,
 a:visited {
-  color: #520;
   background: transparent;
-  font-weight: bold;
-  text-decoration: underline;
+  color: #000;
 }
 
 a:link:after,
 a:visited:after {
+  color: #767676;
   content: " (" attr(href) ") ";
-  font-size: 90%;
+  font-size: 86%;
+}
+
+/* COMPONENTS
+--------------------------------------------------------------------------------*/
+/* TIMELINE
+------------------------------------------*/
+.timeline_item--delivered .deliverable_details ul {
+  list-style: none;
 }
