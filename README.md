@@ -45,3 +45,8 @@ $ mkdir client-project-hub && cd $_
 $ yo project-hub
 # => Answer some questions and you're done!
 ```
+
+
+## Release history
+
+ - 0.1.0 First stable release.
