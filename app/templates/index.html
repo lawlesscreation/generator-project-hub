@@ -7,7 +7,6 @@
     <title><%= clientName %> project hub</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
-    <meta name="author" content="<%= copyrightAuthor %>" />
 
     <link rel="stylesheet" media="all" href="css/normalize.css" />
     <link rel="stylesheet" media="all" href="css/style.css" />
@@ -20,43 +19,43 @@
     <ol class="timeline">
       <li class="timeline_item">
         <p class="deliverable">
-          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_date">Month Day, YYYY</span>
           <span class="deliverable_title">UAT website</span>
         </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item">
         <p class="deliverable">
-          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_date">Month Day, YYYY</span>
           <span class="deliverable_title">HTML templates</span>
         </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item">
         <p class="deliverable">
-          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_date">Month Day, YYYY</span>
           <span class="deliverable_title">Visual designs</span>
         </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item">
         <p class="deliverable">
-          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_date">Month Day, YYYY</span>
           <span class="deliverable_title">Wireframe / Prototype</span>
         </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item">
         <p class="deliverable">
-          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_date">Month Day, YYYY</span>
           <span class="deliverable_title">Functional requirements</span>
         </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item timeline_item--delivered">
         <p class="deliverable">
-          <time class="deliverable_date"><%= todaysDate %></time>
-          <span class="deliverable_title"><%= firstDeliverable %></%></span>
+          <span class="deliverable_date"><%= todaysDate %></span>
+          <span class="deliverable_title"><%= firstDeliverable %></span>
         </p>
         <div class="deliverable_details">
           <ul>
@@ -68,7 +67,7 @@
     </ol><!-- .timeline -->
 
     <footer role="contentinfo">
-      <p>&copy; <%= (new Date).toISOString().split('-')[0] %> <%= copyrightAuthor %>. All rights reserved.</p>
+      <p>Generated using the <a href="https://github.com/lawlesscreation/generator-project-hub">Project Hub Generator</a> for <a href="http://yeoman.io/">Yeoman</a>.</p>
     </footer><!-- .footer -->
   </body>
 </html>

@@ -277,5 +277,10 @@ p {
 .timeline_item--delivered .deliverable_details ul {
   margin-left: 0;
   padding: 0 0 0 16px;
-  vertical-align: top;
+}
+
+/* FOOTER
+------------------------------------------*/
+footer {
+  font-size: 86%;
 }
