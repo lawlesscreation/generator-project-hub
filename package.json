@@ -6,8 +6,8 @@
   "main": "app/index.js",
   "repository": "lawlesscreation/generator-project-hub",
   "author": {
-    "name": "@lawlesscreation",
-    "email": "contact@lawlesscreation.com",
+    "name": "lawlesscreation",
+    "email": "npm@lawlesscreation.com",
     "url": "https://github.com/lawlesscreation"
   },
   "engines": {
