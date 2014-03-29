@@ -49,4 +49,5 @@ $ yo project-hub
 
 ## Release history
 
+ - 0.1.1 Minor tweaks and improvements;
  - 0.1.0 First stable release.
