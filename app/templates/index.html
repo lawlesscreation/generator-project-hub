@@ -59,7 +59,7 @@
         </p>
         <div class="deliverable_details">
           <ul>
-            <li><a href="deliverables/01-<%= firstDeliverableLowerCase %>/<%= _.slugify(clientName) %>-<%= firstDeliverableLowerCase %>_<%= (new Date).toISOString().split('T')[0] %>.pdf"><%= clientName %> <%= firstDeliverable %> (pdf)</a>
+            <li><a href="deliverables/01-<%= _.slugify(firstDeliverableLowerCase) %>/<%= _.slugify(clientName) %>-<%= _.slugify(firstDeliverableLowerCase) %>_<%= (new Date).toISOString().split('T')[0] %>.pdf"><%= clientName %> <%= firstDeliverable %> (pdf)</a>
           </ul>
           <p>Some additional information if required.</p>
         </div><!-- .deliverable_details -->

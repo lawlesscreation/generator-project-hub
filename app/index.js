@@ -64,7 +64,7 @@ var ProjectHubGenerator = yeoman.generators.Base.extend({
 
     this.directory('css', 'css', true);
 
-    this.mkdir('deliverables');
+    this.mkdir('deliverables/01-' + this.firstDeliverableLowerCase.replace(/ /g,'-').replace(/[^\w-]+/g,''));
 
     this.template('index.html', 'index.html');
   }
