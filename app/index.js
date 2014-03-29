@@ -16,15 +16,39 @@ var ProjectHubGenerator = yeoman.generators.Base.extend({
     // short and sweet description of your generator
     this.log(chalk.magenta('Generate a project hub, to be used for consolidating all key project deliverables in reverse chronological order.'));
 
+    // Format date
+    var formatDate = new Date(),
+        date = formatDate.getDate(), 
+        month = "January,February,March,April,May,June,July,August,September,October,November,December".split(",")[formatDate.getMonth()];
+
+    function nth(d) {
+      if(d>3 && d<21) return 'th';
+      switch (d % 10) {
+        case 1:  return "st";
+        case 2:  return "nd";
+        case 3:  return "rd";
+        default: return "th";
+      }
+    }
+
     this.prompt([{
       name: 'clientName',
-      message: 'What\'s the client name for this project hub?'
+      message: 'What\'s the client name for this project hub?',
+      default: 'Magic Beans'
     }, {
       name: 'copyrightAuthor',
-      message: 'Who\'s the copyright author for this project hub?'
+      message: 'Who\'s the copyright author for this project hub?',
+      default: 'John Doe'
+    }, {
+      name: 'firstDeliverable',
+      message: 'Finally, what is/was the first deliverable?',
+      default: 'Proposal'
     }], function (props) {
       this.clientName = props.clientName;
       this.copyrightAuthor = props.copyrightAuthor;
+      this.firstDeliverable = props.firstDeliverable;
+      this.firstDeliverableLowerCase = props.firstDeliverable.toLowerCase();
+      this.todaysDate = month + " " + date + nth(date) + ", " + formatDate.getFullYear();
 
       done();
     }.bind(this));

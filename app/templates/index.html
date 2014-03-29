@@ -19,45 +19,51 @@
 
     <ol class="timeline">
       <li class="timeline_item">
-        <a>
-          <p class="item_date">ETA: DD MMM YYYY</p>
-          <p class="item_title">UAT website</p>
-        </a>
+        <p class="deliverable">
+          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_title">UAT website</span>
+        </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item">
-        <a>
-          <p class="item_date">ETA: DD MMM YYYY</p>
-          <p class="item_title">HTML templates</p>
-        </a>
+        <p class="deliverable">
+          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_title">HTML templates</span>
+        </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item">
-        <a>
-          <p class="item_date">ETA: DD MMM YYYY</p>
-          <p class="item_title">Visual designs</p>
-        </a>
+        <p class="deliverable">
+          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_title">Visual designs</span>
+        </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item">
-        <a>
-          <p class="item_date">ETA: DD MMM YYYY</p>
-          <p class="item_title">Wireframe / Prototype</p>
-        </a>
+        <p class="deliverable">
+          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_title">Wireframe / Prototype</span>
+        </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item">
-        <a>
-          <p class="item_date">ETA: DD MMM YYYY</p>
-          <p class="item_title">Functional requirements</p>
-        </a>
+        <p class="deliverable">
+          <time class="deliverable_date">Month Day, YYYY</time>
+          <span class="deliverable_title">Functional requirements</span>
+        </p>
       </li><!-- .timeline_item -->
 
       <li class="timeline_item timeline_item--delivered">
-        <a href="deliverables/01-contract/">
-          <p class="item_date">01 Jan 2014</p>
-          <p class="item_title">Contract</p>
-        </a>
+        <p class="deliverable">
+          <time class="deliverable_date"><%= todaysDate %></time>
+          <span class="deliverable_title"><%= firstDeliverable %></%></span>
+        </p>
+        <div class="deliverable_details">
+          <ul>
+            <li><a href="deliverables/01-<%= firstDeliverableLowerCase %>/<%= _.slugify(clientName) %>-<%= firstDeliverableLowerCase %>_<%= (new Date).toISOString().split('T')[0] %>.pdf"><%= clientName %> <%= firstDeliverable %> (pdf)</a>
+          </ul>
+          <p>Some additional information if required.</p>
+        </div><!-- .deliverable_details -->
       </li><!-- .timeline_item -->
     </ol><!-- .timeline -->
 
