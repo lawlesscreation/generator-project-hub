@@ -54,5 +54,6 @@ $ yo project-hub
 
 ## Release history
 
+ - 0.2.0 Added gh-pages demo;
  - 0.1.1 Minor tweaks and improvements;
  - 0.1.0 First stable release.
