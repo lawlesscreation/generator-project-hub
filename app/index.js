@@ -60,7 +60,7 @@ var ProjectHubGenerator = yeoman.generators.Base.extend({
     // copy filed and rename where necessary
     this.copy('csslintrc', '.csslintrc');
     this.copy('editorconfig', '.editorconfig');
-    this.copy('.gitignore', '.gitignore');
+    this.copy('gitignore', '.gitignore');
 
     this.directory('css', 'css', true);
 
