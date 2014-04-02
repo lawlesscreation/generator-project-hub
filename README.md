@@ -54,6 +54,7 @@ $ yo project-hub
 
 ## Release history
 
+ - 0.3.1 Bumped release with some tweaks;
  - 0.3.0 Cleaned up files and stable release;
  - 0.2.1 Moved gh-pages to seperate branch;
  - 0.2.0 Added gh-pages demo;
